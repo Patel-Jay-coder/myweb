@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        body {
+            
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Do Hyeon', sans-serif;
+        }
+        header::before {
+            content: "";
+            background: url("bg.jpg");
+            z-index: -1;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.88;
+        }
+
+        .header {
+            color: aliceblue;
+            background-color: dimgray;
+            height: 70px;
+
+        }
+
+        .left {
+            /* border: 2px solid greenyellow; */
+            display: inline-block;
+            left: 43px;
+            top: 20px;
+            position: absolute;
+            font-size: 17px;
+
+        }
+
+        .mid {
+            display: block;
+            margin: 20px auto;
+            width: 50%;
+            padding: 15px 8px
+                /* border: 2px solid rgb(245, 78, 48); */
+        }
+
+        .right {
+            right: 43px;
+            top: 34px;
+            display: inline-block;
+            /* border: 2px solid rgb(23, 58, 216); */
+            position: absolute;
+
+        }
+
+        .navbar {
+
+            display: inline-block;
+            margin: 0px auto;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 30px;
+            margin-left: 50px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 5px 15px;
+            text-decoration: none;
+            color: aliceblue;
+            border: 2px solid black;
+            border-radius: 11px;
+        }
+
+        .left img {
+            height: 50px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 0px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(10, 10, 10);
+            background-color: aquamarine;
+
+        }
+
+        .btn {
+            background-color: black;
+            color: azure;
+            margin: 4px 3px;
+            padding: 1px 13px;
+            font-family: 'Do Hyeon', sans-serif;
+            border: 2px solid white;
+           
+            width: 103px;
+            height: 31px;
+            transition: all 1s ; 
+        }
+
+        .btn:hover {
+            background-color: aquamarine;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .container {
+            border: 2px solid white;
+            border-radius: 25px;
+            margin: 105px auto;
+            padding: 29px 30px;
+            width: 38%;
+            transition: all 1s;
+        }
+        .container:hover{
+            width:45%
+          
+        }
+
+        .form-group input {
+            text-align: center;
+            font-size: 20px;
+            display: block;
+            width: 442px;
+            padding: 5px;
+            margin: 3px auto;
+            border: 2px solid black;
+            border-radius: 22px;
+        }
+
+        .container button {
+            display: block;
+            margin: 15px auto;
+            height: 35px;
+            width: 334px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="123.png" alt="">
+            <div class="name">Dracula's Gym</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call now</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Welcome to Our Gym</h1>
+        <form action="no.php">
+            <div class="form-group">
+                <div>
+                    <input type="text" name="1" id="" placeholder="Enter Your Name">
+                </div>
+                <div>
+                    <input type="text" name="2" id="" placeholder="Enter Your Gender">
+                </div>
+                <div>
+                    <input type="text" name="3" id="" placeholder="Enter Your Email">
+                </div>
+                <div>
+                    <input type="text" name="4" id="" placeholder="Enter Your Phone number">
+                </div>
+                <div>
+                    <input type="text" name="4" id="" placeholder="Enter Your Address">
+                </div>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
